@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Numbers</title>
+</head>
+<body>
+    <div id="magicNumbers"></div>
+
+    <script>
+        var n = 1729;
+var temp = n;
+var rev = 0;
+var sumOfDigits = 0;
+
+
+while (temp > 0) {
+    sumOfDigits = sumOfDigits + temp % 10;
+    temp = temp 
+    temp = (temp / 10) | 0; 
+}
+
+temp = sumOfDigits; 
+
+while (temp > 0) {
+    rev = rev * 10 + temp % 10;
+    temp = temp 
+    temp = (temp / 10) | 0; 
+}
+
+
+if (rev * sumOfDigits === n) {
+    console.log(n + " is a Magic Number.");
+} else {
+    console.log(n + " is not a Magic Number.");
+}
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Sequence</title>
+</head>
+<body>
+    <h2 id="table"></h2>
+
+    <script>
+       
+let msg=document.getElementById('table').innerHTML;
+
+for(let i=1; i<=10; i++){
+
+    msg += `${i} `;
+
+}
+
+document.getElementById('table').innerHTML = msg;
+    </script>
+</body>
+</html>

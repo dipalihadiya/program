@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Numbers</title>
+</head>
+<body>
+    <h2 id="table"></h2>
+
+    <script>
+        
+var sum = 0 ;
+var number = 153;
+var temp;
+var num ;
+
+temp = number;
+while (temp > 0) {
+
+    num = temp % 10;
+    sum += num * num * num;
+   
+    temp = parseInt(temp / 10); 
+}
+
+if (sum == number) {
+    document.getElementById('table').innerHTML = number +' is Armstrong number.'
+}
+else {
+    document.getElementById('table').innerHTML = number +' is not Armstrong number.';
+}
+    </script>
+</body>
+</html>

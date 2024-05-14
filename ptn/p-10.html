@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz Program</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        var num = 1;
+
+do {
+    if (num % 3 === 0 && num % 5 === 0) {
+        console.log("FizzBuzz");
+    } else if (num % 3 === 0) {
+        console.log("Fizz");
+    } else if (num % 5 === 0) {
+        console.log("Buzz");
+    } else {
+        console.log(num);
+    }
+
+    num++;
+} while (num <= 100);
+
+    </script>
+</body>
+</html>
